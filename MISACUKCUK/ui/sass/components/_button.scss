@@ -1,0 +1,42 @@
+.btn {
+    text-align: center;
+    cursor: pointer;
+    line-height: 4rem;
+    overflow: hidden;
+
+    @include element(1.3rem, auto, 4rem, $color-tertiary, $color-primary-dark);
+
+    &__effect {
+        &:hover {
+            color: $color-tertiary;
+            background-color: $color-primary-light;
+        }
+        &:active {
+            color: $color-tertiary;
+            background-color: $color-primary;
+        }
+    }
+
+    &__less3-word {
+        width: 10rem;
+    }
+
+    &__over2-word {
+        padding: 0 2.4rem;
+    }
+
+    &__icon {
+        padding: 0 1.2rem;
+        height: 4rem;
+
+        &--down {
+            height: 100%;
+            padding: 0 1.2rem;
+        }
+    }
+
+    &__gray {
+        background-color: rgba($color-gray, 0.3);
+        color: $color-black;
+    }
+}
